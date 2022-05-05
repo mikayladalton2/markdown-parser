@@ -17,7 +17,6 @@ public class MarkdownParseTest {
         Path fileName = Path.of("test-file8.md");
         String content = Files.readString(fileName);
         assertEquals("Should be the same.",List.of("a link on the first line"),MarkdownParse.getLinks(content));
-
     }
 
 
